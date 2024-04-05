@@ -12,6 +12,7 @@
     align-items: center;
     gap: 30px;
     padding: 0px 20px;
+    background-color: none;
 }
 .banner__textos{
     display: flex;
@@ -29,6 +30,9 @@
 .conteudo{
     background-color: none;
     padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .conteudo__area{
     display: flex;
@@ -41,10 +45,21 @@
     padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.skills__area, 
+.formacao__area, 
+.experiencia__area{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: auto;
+    background-color: none;
     
 }
 .formacao{
     background-color: #EAF2FD;
+
 }
 .skills__item, 
 .formacao__item{
@@ -64,7 +79,7 @@
 .experiencia__item__botoes{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: none;
 
     

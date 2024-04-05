@@ -14,58 +14,65 @@ a{
     
 }
 
-
-/* Para uma tela de no máximo 500px */
-@media (max-width: 500px) {
-    
-    .topo__menu a:nth-child(1),
-    .topo__menu a:nth-child(2),
-    .topo__menu a:nth-child(3),
-    .topo__menu a:nth-child(4),
-    .topo__menu a:nth-child(5){
-        display: none;
-    }
-    .topo__menu a:nth-child(6){
-        font-size: 0.7rem;
-    }
-    .banner__textos{
-        order: 2;
-        background-color: none;
-        
-    }
-    .banner__textos__titulo, .titulo{
-        font-size: 2rem;
-        font-weight: bolder;
-    }
-    .banner__textos__paragrafo{
-        font-size: 1.5rem;
-        font-weight: lighter;
-    }
-    .banner__apresentacao__links{
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    .banner__foto{
-        order: 1;
-    }
-    .banner__foto__foto{
-        border-radius: 100%;
-        width: 250px;
-        
-    }
-    .conteudo{
-        background-color: #EAF2FD;
-        text-align: justify;
-    }
-    .titulo{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-
+.topo__menu a:nth-child(1),
+.topo__menu a:nth-child(2),
+.topo__menu a:nth-child(3),
+.topo__menu a:nth-child(4),
+.topo__menu a:nth-child(5){
+    display: none;
 }
+.topo__menu a:nth-child(6){
+    font-size: 0.7rem;
+}
+a:hover{
+    color: rgb(39, 39, 39);
+    scale: 1.05 ;
+    
+}
+.banner__textos{
+    order: 2;
+    background-color: none;
+    
+}
+.banner__textos__titulo, .titulo{
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: none;
+}
+.banner__textos__paragrafo{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: none;
+}
+.banner__apresentacao__links{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.banner__foto{
+    order: 1;
+}
+.banner__foto__foto{
+    border-radius: 100%;
+    width: 250px;
+    
+}
+.conteudo{
+    background-color: #EAF2FD;
+    text-align: justify;
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 /* ESTILO GLOBAL PARA O ITEM ABAIXO: */
+.skills__titulo, 
+.formacoes__titulo, 
+.experiencia__titulo{
+    margin-bottom: 40px;
+}
 .skills__item, 
 .formacao__item{
     background-color: white;
@@ -91,7 +98,6 @@ a{
 }
 
 /* experiencia */
-
 .experiencia__item__img{
     width: 100%
 }
@@ -101,7 +107,7 @@ a{
     text-align: center;
 }
 .experiencia__item__botoes_btn{
-    min-width: 140px;
+    width: 150px;
     border: none;
     padding: 15px;
     background-color: white;
@@ -122,4 +128,49 @@ a{
 /* temporario */
 .skills__item span{
     display: none;
+}
+
+/* Versão para telas maiores que 900px */
+@media (min-width: 899px) {
+    .topo__logo{
+        font-size: 1.5em;
+    }
+    .topo__menu{
+        display: flex;
+        gap: 30px;
+    }
+    .banner__textos{
+        width: 1100px;
+        text-align: center;
+    }
+    .topo__menu a:nth-child(1),
+    .topo__menu a:nth-child(2),
+    .topo__menu a:nth-child(3),
+    .topo__menu a:nth-child(4),
+    .topo__menu a:nth-child(5){
+        display: inline-block;
+    }
+    .topo__menu a:nth-child(6){
+       font-size: 1rem;
+    }
+    .banner__foto__foto{
+        width: 100%;
+        
+    }
+    .conteudo__area{
+        width: 1100px;
+    }
+    .conteudo__sobre{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    .skills__titulo{
+        width: 100%;
+        text-align: center;
+        background-color: none;
+    }
+    .experiencia__area{
+        max-width: 1100px;
+        background-color: none;
+    }
 }
