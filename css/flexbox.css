@@ -64,8 +64,9 @@
 .experiencia__item__botoes{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: none;
+
     
 }
 /* rodape */

@@ -97,7 +97,7 @@ a{
     text-align: center;
 }
 .experiencia__item__botoes_btn{
-    width: 200px;
+    min-width: 140px;
     border: none;
     padding: 15px;
     background-color: white;
@@ -106,6 +106,8 @@ a{
     font-weight: bolder;
     border-radius: 5px;
     font-size: 1rem;
+    flex-grow: 1;
+    margin: 5px;
 }
 .experiencia__item__botoes_btn:hover{
     background-color: #EAF2FD;
