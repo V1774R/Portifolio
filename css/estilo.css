@@ -8,8 +8,9 @@ a{
 }
 
 .topo__logo{
-    font-size: 1.4em;
+    font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-shrink: 1;
     
 }
 
@@ -23,6 +24,9 @@ a{
     .topo__menu a:nth-child(4),
     .topo__menu a:nth-child(5){
         display: none;
+    }
+    .topo__menu a:nth-child(6){
+        font-size: 0.7rem;
     }
     .banner__textos{
         order: 2;
