@@ -34,7 +34,8 @@ a:hover{
     background-color: none;
     
 }
-.banner__textos__titulo, .titulo{
+.banner__textos__titulo, 
+.titulo{
     font-size: 2rem;
     font-weight: bolder;
     background-color: none;
