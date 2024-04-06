@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/flexbox.css">
-    
 </head>
 <body>
     <header class="topo">
-        <span class="topo__logo">Victor Almeida</span>
-        <nav class="topo__menu">
-            <a href="#">Sobre mim</a>
-            <a href="#">Skills</a>
-            <a href="#">Hobbies</a>
-            <a href="#">Formação</a>
-            <a href="#">Projetos</a>
-            <a href="#">diego_v.almeida@hotmail.com</a>
-        </nav>
-    </header>
-    <section class="banner">
-        <div class="banner__textos">
-            <h1 class="banner__textos__titulo ">Olá! Meu nome é Victor Almeida, sou desenvolvedor fullstack. </h1>
-            <p class="banner__textos__paragrafo">Sou formado em análise e desenvolvimento de sistemas e estou fazendo especialização em front-end da ORACLE ONE na Alura.</p>
-            <div class="banner__apresentacao__links">
-                <a href="https://github.com/V1774R?tab=repositories">Github</a>
-                <a href="https://www.linkedin.com/in/v1774r/">Linkedin</a>
-                <a href="#" onclick="alert('Arquivo temporariamente indisponível. Tente novamente mais tarde.')">Currículo</a>
+        <div class="topo__area area">
+            <div class="topo__area__logo">Victor Almeida</div>
+            <div class="topo__area__links">
+                <a href="#" class="topo__area__links__link">Sobre mim</a>
+                <a href="#" class="topo__area__links__link">Skills</a>
+                <a href="#" class="topo__area__links__link">Hobbies</a>
+                <a href="#" class="topo__area__links__link">Formação</a>
+                <a href="#" class="topo__area__links__link">Projetos</a>
+                <a href="#">diego_v.almeida@hotmail.com</a>
             </div>
         </div>
-        <div class="banner__foto">
-            <img src="imgs/foto.jpg" alt="imagem de Victor Almeida" class="banner__foto__foto">
+    </header>
+
+    <!-- primeira sessão -->
+        
+    <section class="banner cor1">
+        <div class="banner__area area">
+            <div class="banner__area__foto">
+                <img src="imgs/foto.jpg" alt="imagem de Victor Almeida" class="banner__area__foto__foto">
+            </div>
+            <div class="banner__area__textos">
+                <h1 class="banner__area__textos__titulo ">Olá! Meu nome é Victor Almeida, sou desenvolvedor fullstack. </h1>
+                <p class="banner__area__textos__paragrafo">Sou formado em análise e desenvolvimento de sistemas e estou fazendo especialização em front-end da ORACLE ONE na Alura.</p>
+                <div class="banner__area__textos__links">
+                    <a href="https://github.com/V1774R?tab=repositories">Github</a>
+                    <a href="https://www.linkedin.com/in/v1774r/">Linkedin</a>
+                    <a href="#" onclick="alert('Arquivo temporariamente indisponível. Tente novamente mais tarde.')">Currículo</a>
+                </div>
+            </div>
+
         </div>
     </section>
-    <section class="conteudo">
-        <div class="conteudo__area">
-            <h1 class="conteudo__titulo titulo">Sobre mim</h1>
-            <p class="conteudo__sobre">
+
+    <!-- SOBRE MIM -->
+
+    <section class="conteudo cor2">
+        <div class="conteudo__area area">
+            <h1 class="conteudo__area__titulo">Sobre mim</h1>
+            <p class="conteudo__area__sobre">
                 Sou um entusiásta em Tecnologia da Informação altamente dedicado, com noções e conhecimento em linguagens de programação, 
                 frameworks e tecnologias de desenvolvimento web e de software.
                 Tenho experiência com trabalho em equipe, colaborando efetivamente para alcançar metas e objetivos comuns;
@@ -51,81 +61,131 @@
             </p>
         </div>
     </section>
-    <section class="skills">
-        <h1 class="skills__titulo titulo">Skills</h1>
-            <div class="skills__area">
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>HTML5</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>CSS3</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>JAVASCRIPT</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>REACT JS</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>NODE JS</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>PHP</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>JAVA</p>
-                </div>
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>PYTHON</p>
-                </div>   
-                <div class="skills__item">
-                    <span>icone</span>
-                    <p>MYSQLI</p>
-                </div>            
-            </div>         
-        
-    </section>
-    <section class="formacao">
 
-        <h1 class="titulo">Formações Acadêmicas</h1>
-        <div class="formacao__area">
-            <div class="formacao__item">
-                <span>UNINTER</span>
-                <p class="formacao__item__descricao">Análise e desenvolvimento de Sistemas</p>
+     <!-- SKILLS -->
+   
+    <section class="skills cor1">
+        <div class="skills__area area">
+            <h1 class="skills__area__titulo tituloDados">Skills</h1>
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">HTML5</p>
             </div>
 
-            <div class="formacao__item">
-                <span>UDEMY</span>
-                <p class="formacao__item__descricao">JavaScript Fullstack</p>
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span   >
+                <p class="skills__itens__item item">CSS3</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">JAVASCRIPT</p>
             </div>
             
-            <div class="formacao__item">
-                <span>ONE NEXT - ALURA</span>
-                <p class="formacao__item__descricao">Especialização em Front-end</p>
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">REACT JS</p>
             </div>
 
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">NODE JS</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">PHP</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">JAVA</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">PYTHON</p>
+            </div>  
+
+            <div class="itens cor2">
+                <span class="skills__itens__icone icone">icone</span>
+                <p class="skills__itens__item item">MYSQLI</p>
+            </div> 
         </div>
     </section>
-    <section class="experiencia">
-        <h1 class="experiencia__titulo titulo">Experiência Profissional</h1>
-        <div class="experiencia__area">
+
+ <!-- HOBBIES -->
+
+    <section class="cor1">
+        <div class="hobbie__area area">
+            <h1 class="hobbie__area__titulo tituloDados">Hobbies</h1>
+            <div class="itens cor2">
+                <span class="hobbie__itens__icone icone">icone</span>
+                <p class="hobbie__itens__item item">Tecnologia</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="hobbie__itens__icone icone">icone</span>
+                <p class="hobbie__itens__item item">Violão</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="hobbie__itens__icone icone">icone</span>
+                <p class="hobbie__itens__item item">Teclado</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="hobbie__itens__icone icone">icone</span>
+                <p class="hobbie__itens__item item">Guitarra</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="hobbie__itens__icone icone">icone</span>
+                <p class="hobbie__itens__item item">Cinema</p>
+            </div>
+
+            <div class="itens cor2">
+                <span class="hobbie__itens__icone icone">icone</span>
+                <p class="hobbie__itens__item item">Jogos online</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formações -->
+
+    <section class="cor2">
+        <div class="area">
+            <h1 class="tituloDados">Formações Acadêmicas</h1>
+            <div class="itens cor1">        
+                <p class="item ">Análise e desenvolvimento de Sistemas</p>
+                <span >UNINTER</span>
+            </div>
+        
+            <div class="itens cor1">  
+                <p class="item ">JavaScript Fullstack</p>
+                <span >UDEMY</span>
+            </div>
+
+            <div class="itens cor1">
+                <p class="item ">Especialização em Front-end</p>
+                <span >ONE NEXT - ALURA</span>
+            </div>
+    </section>
+
+    <!-- Experiencias -->
+
+    <section class="cor1">
+        <div class="experiencia__area area">
+            <h1 class="tituloDados">Experiência Profissional</h1>
             <div class="experiencia__item">
                 <img src="imgs/eaf.png" alt="foto do projeto Espaço Amanda Fernandes" class="experiencia__item__img">
                 <p class="experiencia__item__descricao" >Projeto Espaço Amanda Fernandes</p>
-                <div class="experiencia__item__botoes">
+                <div class="experiencia__botoes">
                     <a href="https://github.com/V1774R?tab=repositories" target="_blank">
-                        <input type="button" value="Repositório" class="experiencia__item__botoes_btn">
+                        <input type="button" value="Repositório" class="experiencia__botao">
                     </a>
                     <a href="https://projeto-eaf.vercel.app/" target="_blank">
-                        <input type="button" value="DEMO" class="experiencia__item__botoes_btn">
+                        <input type="button" value="DEMO" class="experiencia__botao">
                     </a>
                 </div>
             </div>
@@ -133,25 +193,40 @@
             <div class="experiencia__item">
                 <img src="imgs/boe.png" alt="foto projeto BOE-GCMR" class="experiencia__item__img">
                 <p class="experiencia__item__descricao" >Projeto Boletim Online Guarda Civil Municipal</p>
-                <div class="experiencia__item__botoes">
-                    <a href="https://github.com/V1774R?tab=repositories" target="_blank"><input type="button" value="Repositório" class="experiencia__item__botoes_btn"></a>
-                    <a href="https://projeto-bo-e.vercel.app/" target="_blank"><input type="button" value="DEMO" class="experiencia__item__botoes_btn"></a>
+                <div class="experiencia__botoes">
+                    <a href="https://github.com/V1774R?tab=repositories" target="_blank"><input type="button" value="Repositório" class="experiencia__botao"></a>
+                    <a href="https://projeto-bo-e.vercel.app/" target="_blank"><input type="button" value="DEMO" class="experiencia__botao"></a>
                 </div>
             </div>
     
-            <!-- <div class="experiencia__item">
-                <img src="imgs/ptf.png" alt="Foto do projeto Portifólio Victor Almeida" class="experiencia__item__img">
-                <p class="experiencia__item__descricao" >Projeto Portifólio Victor Almeida</p>
-                <div class="experiencia__item__botoes">
-                    <a href="https://github.com/V1774R?tab=repositories" target="_blank"><input type="button" value="Repositório" class="experiencia__item__botoes_btn"></a>
-                    <a href="https://projeto-bo-e.vercel.app/" target="_blank"><input type="button" value="DEMO" class="experiencia__item__botoes_btn"></a>
-                </div>
-            </div> -->
         </div>
         
     </section>
-    <footer class="rodape">
-        <p class="rodape__texto">Desenvolvido por Victor Almeida</p>
+    <section>
+        <div class="contatoArea cor3 area">
+            <h1 class="tituloDados">Contato</h1>
+            <p>Quer entrar em contato comigo? Preencha o formulário abaixo ou use as opções de contato disponíveis.</p>
+            <div class="formImg">
+                <img src="imgs/contato.jpg" alt="imagem de contato" class="imgContato">
+                <form action="#" class="formulario">
+                    <input type="text" placeholder="Nome" class="formulario__campo">
+                    <input type="text" placeholder="E-mail" class="formulario__campo">
+                    <input type="text" placeholder="Assunto" class="formulario__campo">
+                    <textarea placeholder="Mensagem" class="formulario__campo"></textarea>
+                    <input type="submit" value="Enviar Mensagem" class="formulario__campo">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="cor2">
+        
+            <div class="redes">
+                <a href="https://api.whatsapp.com/send?phone=5581982110851&text=Ol%C3%A1%2C%20Victor%20Almeida!%20Vim%20do%20seu%20portif%C3%B3lio." target="_blank"><img src="imgs/zap.png" alt="Whatsapp"></a>
+                <a href="https://github.com/V1774R?tab=repositories" target="_blank"><img src="imgs/git.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/v1774r/" target="_blank"><img src="imgs/linkedin.png" alt="Linkedin"></a>                
+            </div>
+            <p class="textoRodape">Desenvolvido por Victor Almeida</p>
+       
     </footer>
 </body>
 </html>

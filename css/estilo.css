@@ -1,177 +1,180 @@
 body{
-    color: rgb(104, 102, 102);
-    background-color: rgb(209, 209, 209);
+    color:#666;
+}
+section{
+    padding-block: 30px;
+}
+
+h1{
+    font-size: 1.8rem;
+    width: 100%;
+}
+p{
+    font-weight: lighter;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+p.item{
+    text-align: center;
 }
 a{
     text-decoration: none;
-    color: rgb(104, 102, 102);
-}
-
-.topo__logo{
-    font-size: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    flex-shrink: 1;
-    
-}
-
-.topo__menu a:nth-child(1),
-.topo__menu a:nth-child(2),
-.topo__menu a:nth-child(3),
-.topo__menu a:nth-child(4),
-.topo__menu a:nth-child(5){
-    display: none;
-}
-.topo__menu a:nth-child(6){
-    font-size: 0.7rem;
+    color: #666;
+    transition: 0.5s;
 }
 a:hover{
-    color: rgb(39, 39, 39);
-    scale: 1.05 ;
-    
+    color: black;
+    transition: 0.5s;
 }
-.banner__textos{
-    order: 2;
-    background-color: none;
-    
+.topo{
+    background-color: #dadada;
+    height: 90px;
+    color: #666;
 }
-.banner__textos__titulo, 
-.titulo{
-    font-size: 2rem;
-    font-weight: bolder;
+/* AREA DO TPO */
+.topo__area{
+    max-width: 90%;
     background-color: none;
 }
-.banner__textos__paragrafo{
-    font-size: 1.5rem;
-    font-weight: lighter;
+/* LARGURA DAS DEMAIS AREAS */
+.area{
+    max-width: 90%;
     background-color: none;
 }
-.banner__apresentacao__links{
-    font-size: 1.2rem;
-    font-weight: bold;
+.topo__area__logo{
+   font-size: 1.5rem;
+   font-weight: bolder;
+   background-color: none;
 }
+.topo__area__links{
+    font-size: 0.8rem;
+    background-color: none;
+}
+.topo__area__links__link{
+    display: none;
+}
+/* Sessões */
+    /* Cores da sessão */
 
-.banner__foto{
+.cor1{
+    background-color:#dadada;
+}
+.cor2{
+    background-color: #F5F5F5;
+}
+    
+
+.banner__area__textos{
     order: 1;
 }
-.banner__foto__foto{
-    border-radius: 100%;
-    width: 250px;
-    
-}
-.conteudo{
-    background-color: #EAF2FD;
-    text-align: justify;
-}
-.titulo{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
+.banner__area__textos__links{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* ESTILO GLOBAL PARA O ITEM ABAIXO: */
-.skills__titulo, 
-.formacoes__titulo, 
-.experiencia__titulo{
-    margin-bottom: 40px;
+.banner__area__foto__foto{
+    
+    max-width: 400px;
+    box-shadow: 1px 1px 5px rgb(90, 90, 90);
+    border-radius: 100%;
 }
-.skills__item, 
-.formacao__item{
-    background-color: white;
-    width: 160px;
-    height: 160px;
-    border-radius: 5px;
-    margin: 10px;
-    flex-grow: 1;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    color: rgb(104, 102, 102);
-    transition: 0.2s;
-}
-.skills__item:hover, 
-.formacao__item:hover{
-    transition: 0.2s;
-    scale: 1.05;
-}
-.formacao__item__descricao{
-    width: 100%;
+.tituloDados{
+    margin-bottom: 20px;
     text-align: center;
+}
+.itens{
+    width: 150px;
+    height: 150px;
+    flex-grow: 1;
+}
+
+.item{
+    font-weight: bolder;
+    color: #666;
+
+}
+
+/* POR ENQUANTO */
+.icone{
+    display: none;
+}
+/* ------------------ */
+/* experiencia */
+
+.experiencia__item{
+    max-width: 100%;
+}
+.experiencia__item__img{
+    max-width: 100%;
+}
+.experiencia__botao{
+    width: 150px;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+}
+.experiencia__botao:hover{
+    background-color: #9c9c9c;
+    transition: 0.5s;
+}
+
+.experiencia__item__descricao{
+    text-align: center;
+}
+.formulario{
+    min-width: 300px;
+}
+.formulario__campo{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(69, 150, 170);
+    flex-grow: 1;
+    border-radius: 5px;
+}
+.imgContato{
+    max-width: 50%;
+    display: none;
+}
+footer{
+    height: 120px;
+    background-color: #666;
+}
+
+.textoRodape{
     font-size: 0.8rem;
 }
 
-/* experiencia */
-.experiencia__item__img{
-    width: 100%
-}
-.experiencia__item__descricao{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
-    text-align: center;
-}
-.experiencia__item__botoes_btn{
-    width: 150px;
-    border: none;
-    padding: 15px;
-    background-color: white;
-    transition: 0.5s;
-    color: rgb(104, 102, 102);
-    font-weight: bolder;
-    border-radius: 5px;
-    font-size: 1rem;
-    flex-grow: 1;
-    margin: 5px;
-}
-.experiencia__item__botoes_btn:hover{
-    background-color: #EAF2FD;
-    transition: 0.5s;
-}
 
-
-/* temporario */
-.skills__item span{
-    display: none;
-}
-
-/* Versão para telas maiores que 900px */
-@media (min-width: 899px) {
-    .topo__logo{
-        font-size: 1.5em;
-    }
-    .topo__menu{
-        display: flex;
-        gap: 30px;
-    }
-    .banner__textos{
-        width: 1100px;
-        text-align: center;
-    }
-    .topo__menu a:nth-child(1),
-    .topo__menu a:nth-child(2),
-    .topo__menu a:nth-child(3),
-    .topo__menu a:nth-child(4),
-    .topo__menu a:nth-child(5){
-        display: inline-block;
-    }
-    .topo__menu a:nth-child(6){
-       font-size: 1rem;
-    }
-    .banner__foto__foto{
-        width: 100%;
-        
-    }
-    .conteudo__area{
-        width: 1100px;
-    }
-    .conteudo__sobre{
-        font-size: 1.5rem;
-        font-weight: lighter;
-    }
-    .skills__titulo{
-        width: 100%;
-        text-align: center;
-        background-color: none;
-    }
-    .experiencia__area{
+@media(min-width: 960px){
+    .area{
         max-width: 1100px;
         background-color: none;
+    }
+    .topo__area__links{
+        font-size: 1rem;
+        background-color: none;
+    }
+    .topo__area__links__link{
+        display: block;
+    }
+    .banner{
+        background-color: none;
+    }
+    .banner__area__foto{
+        order: 2;
+    }
+
+    .banner__area__foto__foto{
+        width: 1100px;
+        max-width: 100%;
+        border-radius: 5px;
+        max-width: 100%;        
+    }
+    .imgContato{
+        max-width: 50%;
+        display: block;
+    }
+    .formulario{
+        width: 100%;
     }
 }

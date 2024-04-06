@@ -1,96 +1,103 @@
-/* TOPO E BANNER */
 .topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topo__area{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    padding: 0px 15px;
+    flex-grow: 1;
 }
-.banner{
+/* Configurações das areas */
+.area{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 0px 20px;
-    background-color: none;
+    flex-grow: 1;
+    gap: 25px;
 }
-.banner__textos{
+.topo__area__links{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 50px;
 }
-.banner__apresentacao__links{
-    display: flex;
-    gap: 35px;
-}
-
-/* CONTEUDO */
-
-.conteudo{
-    background-color: none;
-    padding: 40px 20px;
+section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.conteudo__area{
+
+.banner__area__textos{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
-.skills, 
-.formacao,
-.experiencia{
-    padding: 30px 20px;
+.banner__area__textos__links{
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    flex-direction: row;
+    gap: 40px;
 }
-.skills__area, 
-.formacao__area, 
-.experiencia__area{
+.area{
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 0;
+    gap: 10px;
     flex-wrap: wrap;
-    width: 1100px;
-    margin: auto;
-    background-color: none;
+}
+.itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
 }
-.formacao{
-    background-color: #EAF2FD;
-
-}
-.skills__item, 
-.formacao__item{
+.experiencia__area{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 80px;
 }
-
-/* experiencia */
 .experiencia__item{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+.experiencia__botoes{
+    display: flex;
     gap: 20px;
-    margin-bottom: 60px;
-}
-.experiencia__item__botoes{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: none;
-
-    
-}
-/* rodape */
-.rodape{
-    height: 100px;
-    background-color: #EAF2FD;
-    display: flex;
     align-items: center;
     justify-content: center;
+
+}
+.contatoArea{
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.formImg{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.redes{
+    display: flex;
+    gap: 30px;
+}
+.redes img{
+    width: 50px;
 }

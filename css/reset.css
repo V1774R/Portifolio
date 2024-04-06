@@ -1,4 +1,4 @@
 *{
-    margin: 0px;
+    margin: 0px; /* Tira as margens de todos os elementos. O sinal de * significa tudo. */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
