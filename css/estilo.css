@@ -1,8 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     color:#666;
 }
 section{
     padding-block: 30px;
+    min-height: 80vh;
 }
 
 h1{
@@ -19,23 +23,22 @@ p.item{
 }
 a{
     text-decoration: none;
-    color: #666;
+    color: #696969;
     transition: 0.5s;
 }
 a:hover{
-    color: black;
+    color: rgb(190, 190, 190);
     transition: 0.5s;
 }
 .topo{
-    background-color: #dadada;
-    height: 90px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
     color: #666;
+    
 }
-/* AREA DO TPO */
-.topo__area{
-    max-width: 90%;
-    background-color: none;
-}
+
 /* LARGURA DAS DEMAIS AREAS */
 .area{
     max-width: 90%;
@@ -44,14 +47,16 @@ a:hover{
 .topo__area__logo{
    font-size: 1.5rem;
    font-weight: bolder;
-   background-color: none;
+   background-color: red;
 }
 .topo__area__links{
     font-size: 0.8rem;
     background-color: none;
+    font-size: 2rem;
 }
 .topo__area__links__link{
     display: none;
+    font-size: 1.2rem;
 }
 /* Sessões */
     /* Cores da sessão */
@@ -63,7 +68,9 @@ a:hover{
     background-color: #F5F5F5;
 }
     
-
+.banner{
+    margin-top: 80px;
+}
 .banner__area__textos{
     order: 1;
 }
@@ -73,10 +80,9 @@ a:hover{
 }
 
 .banner__area__foto__foto{
+    margin-bottom: 10px;
+    max-width: 100%;
     
-    max-width: 400px;
-    box-shadow: 1px 1px 5px rgb(90, 90, 90);
-    border-radius: 100%;
 }
 .tituloDados{
     margin-bottom: 20px;
@@ -86,6 +92,10 @@ a:hover{
     width: 150px;
     height: 150px;
     flex-grow: 1;
+}
+.itens:hover{
+    transition: 0.5s;
+    background-color: rgb(250, 219, 179);
 }
 
 .item{
@@ -103,14 +113,18 @@ a:hover{
 
 .experiencia__item{
     max-width: 100%;
+    min-height: 80vh;
+
 }
 .experiencia__item__img{
     max-width: 100%;
 }
 .experiencia__botao{
-    width: 150px;
+    cursor: pointer;
+    min-width: 150px;
     border: none;
     padding: 10px;
+    font-size: 1rem;
     transition: 0.5s;
 }
 .experiencia__botao:hover{
@@ -120,6 +134,7 @@ a:hover{
 
 .experiencia__item__descricao{
     text-align: center;
+    font-size: 3rem;
 }
 .formulario{
     min-width: 300px;
@@ -146,9 +161,14 @@ footer{
 
 
 @media(min-width: 960px){
+  
     .area{
         max-width: 1100px;
         background-color: none;
+        
+    }
+    .topo__area__logo{
+        display: none;
     }
     .topo__area__links{
         font-size: 1rem;
@@ -162,13 +182,15 @@ footer{
     }
     .banner__area__foto{
         order: 2;
+        
     }
 
     .banner__area__foto__foto{
         width: 1100px;
         max-width: 100%;
         border-radius: 5px;
-        max-width: 100%;        
+        max-width: 100%;
+          
     }
     .imgContato{
         max-width: 50%;

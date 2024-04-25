@@ -10,32 +10,31 @@
 </head>
 <body>
     <header class="topo">
-        <div class="topo__area area">
-            <div class="topo__area__logo">Victor Almeida</div>
-            <div class="topo__area__links">
-                <a href="#" class="topo__area__links__link">Sobre mim</a>
-                <a href="#" class="topo__area__links__link">Skills</a>
-                <a href="#" class="topo__area__links__link">Hobbies</a>
-                <a href="#" class="topo__area__links__link">Formação</a>
-                <a href="#" class="topo__area__links__link">Projetos</a>
-                <a href="#">diego_v.almeida@hotmail.com</a>
-            </div>
+        <!-- <div class="topo__area__logo">Victor Almeida</div> -->
+        <div class="topo__area__links">
+            <a href="#home" class="topo__area__links__link">Início</a>
+            <a href="#sobre" class="topo__area__links__link">Sobre mim</a>
+            <a href="#skills" class="topo__area__links__link">Skills</a>
+            <a href="#hobbies" class="topo__area__links__link">Hobbies</a>
+            <a href="#formacao" class="topo__area__links__link">Formação</a>
+            <a href="#projetos" class="topo__area__links__link">Projetos</a>
+            <a href="#contato">Contato</a>
         </div>
     </header>
 
     <!-- primeira sessão -->
         
-    <section class="banner cor1">
+    <section class="banner cor1" id="home">
         <div class="banner__area area">
             <div class="banner__area__foto">
-                <img src="imgs/foto.jpg" alt="imagem de Victor Almeida" class="banner__area__foto__foto">
+                <img src="imgs/banner.jpg" alt="imagem de Victor Almeida" class="banner__area__foto__foto">
             </div>
             <div class="banner__area__textos">
-                <h1 class="banner__area__textos__titulo ">Olá! Meu nome é Victor Almeida, sou desenvolvedor fullstack. </h1>
+                <h1 class="banner__area__textos__titulo ">Olá! Meu nome é Victor Almeida, sou Desenvolvedor Web. </h1>
                 <p class="banner__area__textos__paragrafo">Sou formado em análise e desenvolvimento de sistemas e estou fazendo especialização em front-end da ORACLE ONE na Alura.</p>
                 <div class="banner__area__textos__links">
-                    <a href="https://github.com/V1774R?tab=repositories">Github</a>
-                    <a href="https://www.linkedin.com/in/v1774r/">Linkedin</a>
+                    <a href="https://github.com/V1774R?tab=repositories" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/v1774r/" target="_blank">Linkedin</a>
                     <a href="#" onclick="alert('Arquivo temporariamente indisponível. Tente novamente mais tarde.')">Currículo</a>
                 </div>
             </div>
@@ -45,7 +44,7 @@
 
     <!-- SOBRE MIM -->
 
-    <section class="conteudo cor2">
+    <section class="conteudo cor2" id="sobre">
         <div class="conteudo__area area">
             <h1 class="conteudo__area__titulo">Sobre mim</h1>
             <p class="conteudo__area__sobre">
@@ -64,7 +63,7 @@
 
      <!-- SKILLS -->
    
-    <section class="skills cor1">
+    <section class="skills cor1" id="skills">
         <div class="skills__area area">
             <h1 class="skills__area__titulo tituloDados">Skills</h1>
             <div class="itens cor2">
@@ -116,7 +115,7 @@
 
  <!-- HOBBIES -->
 
-    <section class="cor1">
+    <section class="cor1" id="hobbies">
         <div class="hobbie__area area">
             <h1 class="hobbie__area__titulo tituloDados">Hobbies</h1>
             <div class="itens cor2">
@@ -153,7 +152,7 @@
 
     <!-- Formações -->
 
-    <section class="cor2">
+    <section class="cor2" id="formacao">
         <div class="area">
             <h1 class="tituloDados">Formações Acadêmicas</h1>
             <div class="itens cor1">        
@@ -174,12 +173,15 @@
 
     <!-- Experiencias -->
 
-    <section class="cor1">
+    <section class="cor1" id="projetos">
         <div class="experiencia__area area">
             <h1 class="tituloDados">Experiência Profissional</h1>
+
             <div class="experiencia__item">
-                <img src="imgs/eaf.png" alt="foto do projeto Espaço Amanda Fernandes" class="experiencia__item__img">
                 <p class="experiencia__item__descricao" >Projeto Espaço Amanda Fernandes</p>
+
+                <img src="imgs/eaf.png" alt="foto do projeto Espaço Amanda Fernandes" class="experiencia__item__img">
+                
                 <div class="experiencia__botoes">
                     <a href="https://github.com/V1774R?tab=repositories" target="_blank">
                         <input type="button" value="Repositório" class="experiencia__botao">
@@ -189,10 +191,41 @@
                     </a>
                 </div>
             </div>
-    
             <div class="experiencia__item">
-                <img src="imgs/boe.png" alt="foto projeto BOE-GCMR" class="experiencia__item__img">
+                <p class="experiencia__item__descricao" >Projeto Alura Fokus</p>
+
+                <img src="imgs/aluraFokus.png" alt="foto do projeto Alura Fokus" class="experiencia__item__img">
+                
+                <div class="experiencia__botoes">
+                    <a href="https://github.com/V1774R?tab=repositories" target="_blank">
+                        <input type="button" value="Repositório" class="experiencia__botao">
+                    </a>
+                    <a href="https://projeto-fokus-rosy.vercel.app/" target="_blank">
+                        <input type="button" value="DEMO" class="experiencia__botao">
+                    </a>
+                </div>
+            </div>
+
+            <div class="experiencia__item">
+                <p class="experiencia__item__descricao" >Projeto Alura Books</p>
+
+                <img src="imgs/alurabook.png" alt="foto do projeto Alura Books" class="experiencia__item__img">
+                
+                <div class="experiencia__botoes">
+                    <a href="https://github.com/V1774R?tab=repositories" target="_blank">
+                        <input type="button" value="Repositório" class="experiencia__botao">
+                    </a>
+                    <a href="https://alurabooks-navy-chi.vercel.app/" target="_blank">
+                        <input type="button" value="DEMO" class="experiencia__botao">
+                    </a>
+                </div>
+            </div>
+
+            <div class="experiencia__item">
                 <p class="experiencia__item__descricao" >Projeto Boletim Online Guarda Civil Municipal</p>
+
+                <img src="imgs/boe.png" alt="foto projeto BOE-GCMR" class="experiencia__item__img">
+                
                 <div class="experiencia__botoes">
                     <a href="https://github.com/V1774R?tab=repositories" target="_blank"><input type="button" value="Repositório" class="experiencia__botao"></a>
                     <a href="https://projeto-bo-e.vercel.app/" target="_blank"><input type="button" value="DEMO" class="experiencia__botao"></a>
@@ -202,8 +235,9 @@
         </div>
         
     </section>
+
     <section>
-        <div class="contatoArea cor3 area">
+        <div class="contatoArea cor3 area" id="contato">
             <h1 class="tituloDados">Contato</h1>
             <p>Quer entrar em contato comigo? Preencha o formulário abaixo ou use as opções de contato disponíveis.</p>
             <div class="formImg">
@@ -218,6 +252,9 @@
             </div>
         </div>
     </section>
+
+    
+
     <footer class="cor2">
         
             <div class="redes">
