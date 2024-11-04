@@ -16,7 +16,7 @@
             <a href="#home" class="topo__area__links__link">Início</a>
             <a href="#sobre" class="topo__area__links__link">Sobre mim</a>
             <a href="#skills" class="topo__area__links__link">Skills</a>
-            <a href="#hobbies" class="topo__area__links__link">Hobbies</a>
+            <a style="display: none;" href="#hobbies" class="topo__area__links__link">Hobbies</a>
             <a href="#formacao" class="topo__area__links__link">Formação</a>
             <a href="#projetos" class="topo__area__links__link">Projetos</a>
             <a href="#contato">Contato</a>
@@ -32,11 +32,11 @@
             </div>
             <div class="banner__area__textos">
                 <h1 class="banner__area__textos__titulo ">Olá! Meu nome é Victor Almeida, sou Desenvolvedor Web. </h1>
-                <p class="banner__area__textos__paragrafo">Sou formado em análise e desenvolvimento de sistemas e estou fazendo especialização em front-end da ORACLE ONE na Alura.</p>
+                <p class="banner__area__textos__paragrafo">Sou formado em análise e desenvolvimento de sistemas, contruo APIs em NODE.JS e tenho especialização em front-end da ORACLE ONE na Alura.</p>
                 <div class="banner__area__textos__links">
                     <a href="https://github.com/V1774R" target="_blank">Github</a>
                     <a href="https://www.linkedin.com/in/v1774r/" target="_blank">Linkedin</a>
-                    <a href="#" onclick="alert('Arquivo temporariamente indisponível. Tente novamente mais tarde.')">Currículo</a>
+                    <a target="_blank" href="assets/curriculo_victor_almeida.pdf">Currículo</a>
                 </div>
             </div>
 
@@ -47,7 +47,12 @@
 
     <section class="conteudo cor2 hide" id="sobre">
         <div class="conteudo__area area">
+            
             <h1 class="conteudo__area__titulo">Sobre mim</h1>
+            <p class="conteudo__area__sobre">
+                Atualmente estou no trabalhando em parceiria com a Emprel ( Empresa Municipal de Informática do Recife), 
+                através do Núcleo Setorial de Tecnologia da GCMR, no qual possuo um ano de experiência.
+            </p>
             <p class="conteudo__area__sobre">
                 Sou um entusiásta em Tecnologia da Informação altamente dedicado, com noções e conhecimento em linguagens de programação, 
                 frameworks e tecnologias de desenvolvimento web e de software.
@@ -59,6 +64,7 @@
                 contribuir significativamente para o sucesso da equipe e da organização. Estou pronto para enfrentar novos desafios e 
                 continuamente expandir meu conjunto de habilidades em um ambiente dinâmico e inovador.
             </p>
+
         </div>
     </section>
 
@@ -116,7 +122,7 @@
 
  <!-- HOBBIES -->
 
-    <section class="cor1 hide" id="hobbies">
+    <section class="cor1 hide" id="hobbies" style="display: none;">
         <div class="hobbie__area area">
             <h1 class="hobbie__area__titulo tituloDados">Hobbies</h1>
             <div class="itens cor2">
@@ -175,24 +181,10 @@
     <!-- Experiencias -->
 
     <section class="cor1 hide" id="projetos">
-        <div class="experiencia__area area">
-            <h1 class="tituloDados">Experiência Profissional</h1>
+        <div class="experiencia__area area " id="areaProjetos">
 
-            <div class="experiencia__item hide">
-                <p class="experiencia__item__descricao" >Projeto Espaço Amanda Fernandes</p>
 
-                <img src="imgs/eaf.png" alt="foto do projeto Espaço Amanda Fernandes" class="experiencia__item__img">
-                
-                <div class="experiencia__botoes">
-                    <a href="https://github.com/V1774R/ProjetoEAF" target="_blank">
-                        <input type="button" value="Repositório" class="experiencia__botao">
-                    </a>
-                    <a href="https://projeto-eaf.vercel.app/" target="_blank">
-                        <input type="button" value="DEMO" class="experiencia__botao">
-                    </a>
-                </div>
-            </div>
-            <div class="experiencia__item hide">
+            <!-- <div class="experiencia__item hide">
                 <p class="experiencia__item__descricao" >Projeto Alura Fokus</p>
 
                 <img src="imgs/aluraFokus.png" alt="foto do projeto Alura Fokus" class="experiencia__item__img">
@@ -231,7 +223,7 @@
                     <a href="#" target="_blank"><input type="button" value="Repositório" class="experiencia__botao" onclick="alert('Desculpe... Por se tratar de um projeto oficial, ainda não possível obter autorização para divulgar esse projeto. Ele ficará disponível em breve. Uma prévia da fase inicial está disponível para visualização. Clicque no botão DEMO.')"></a>
                     <a href="https://projeto-bo-e.vercel.app/" target="_blank"><input type="button" value="DEMO" class="experiencia__botao"></a>
                 </div>
-            </div>
+            </div> -->
     
         </div>
         
@@ -266,5 +258,94 @@
             <p class="textoRodape">Desenvolvido por Victor Almeida</p>
        
     </footer>
+
+    <script>
+        const projetos = [
+            {
+                "projeto": "Boletim de Ocorrência Eletrônico",
+                "imagem": "imgs/boe.png",
+                "alt": "foto projeto BOE-GCMR",
+                "demo": "https://boe-v3.vercel.app/",
+            },
+            {
+                "projeto": "Espaço Amanda Fernandes",
+                "imagem": "imgs/eaf.png",
+                "alt": "foto do projeto Espaço Amanda Fernandes",
+                "demo": "https://projeto-eaf.vercel.app/",
+            },
+            {
+                "projeto": "Home Page Peludos PetShop",
+                "imagem": "imgs/peludospet.png",
+                "alt": "foto da home page Peludos Pet",
+                "demo": "https://peludospet.vercel.app/",
+            },
+            {
+                "projeto": "Projeto App Cardápio Online",
+                "imagem": "imgs/cardapio.png",
+                "alt": "foto do projeto App Cardápio",
+                "demo": "https://cardapio-eight-omega.vercel.app/",
+            },
+            {
+                "projeto": "Arícia Arquitetura",
+                "imagem": "imgs/ariciaarq.png",
+                "alt": "foto projeto Arícia Arquitetura",
+                "demo": "https://aricia-arq.vercel.app/",
+            },
+            {
+                "projeto": "Projeto AluraFlix",
+                "imagem": "imgs/aluraflix.png",
+                "alt": "foto do projeto AluraFlix",
+                "demo": "https://aluraflix-six-flame.vercel.app/",
+            },
+            {
+                "projeto": "Projeto Alura MIDI",
+                "imagem": "imgs/aluramidi.png",
+                "alt": "foto do projeto Alura Midi",
+                "demo": "https://projeto-alura-midi-villar.vercel.app/",
+            },
+            {
+                "projeto": "Projeto Alura Fokus",
+                "imagem": "imgs/aluraFokus.png",
+                "alt": "foto do projeto Alura Fokus",
+                "demo": "https://projeto-fokus-rosy.vercel.app/",
+            },
+            {
+                "projeto": "Projeto Alura Books",
+                "imagem": "imgs/alurabook.png",
+                "alt": "foto do projeto Alura Books",
+                "demo": "https://alurabooks-navy-chi.vercel.app/",
+            }
+        ]
+
+        const gerarProjetos = () =>{
+            const areaProjetos = document.querySelector('#areaProjetos');
+            areaProjetos.innerHTML = ''
+            areaProjetos.innerHTML = `
+                    <h1 class="tituloDados">Experiência Profissional</h1>
+                `
+            projetos.forEach(objeto => {
+                areaProjetos.innerHTML += `
+                    <div class="experiencia__item hide">
+                        <p class="experiencia__item__descricao" >${objeto.projeto}</p>
+
+                        <img src="${objeto.imagem}" alt="${objeto.alt}" class="experiencia__item__img">
+                        
+                        <div class="experiencia__botoes">
+                            <a href="https://github.com/V1774R/ProjetoEAF" target="_blank">
+                                <input type="button" value="Repositório" class="experiencia__botao">
+                            </a>
+                            <a href="${objeto.demo}" target="_blank">
+                                <input type="button" value="DEMO" class="experiencia__botao">
+                            </a>
+                        </div>
+                    </div>
+                `
+            })
+        }
+
+        gerarProjetos()
+    </script>
+
+
 </body>
 </html>

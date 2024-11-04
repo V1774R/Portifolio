@@ -31,3 +31,4 @@ const myObserver2 = new IntersectionObserver((elementos)=>{
 experiencias.forEach(experiencia => {
     myObserver2.observe(experiencia);
 })
+
